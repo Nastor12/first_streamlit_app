@@ -20,7 +20,7 @@ st.header("Fruityvice Fruit Advice!")
 def get_fruit_choice(this_fruit_choice):
    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ fruit_choice)
 #st.text(fruityvice_response.json())
-       normalized_fruit= pd.json_normalize(fruityvice_response.json())
+   normalized_fruit= pd.json_normalize(fruityvice_response.json())
    return normalized_fruit
   
 try:
